@@ -1,0 +1,136 @@
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-box
+{
+    background-color: #e5e5e5;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    padding-bottom: 10%;
+    max-height: 500px;
+}
+.head
+{
+    margin: 10px 20px 10px;
+    display: flex;
+}
+.head h2
+{
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+.head img
+{
+    width: 30px;
+    margin-bottom: -5px;
+}
+.add-task
+{
+    margin-left: 20px;
+
+}
+.add-task input
+{
+    width: 70%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: #edeef0;
+    padding: 20px;
+
+}
+#Add_Task{
+    background-color:#ff5945;
+    width: 15%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-color: none;
+    border-radius: 20px;
+    margin-left: -15%;
+    cursor: pointer;
+}
+#Add_Task :hover
+{
+    transform: scale(95%);
+}
+ul li{
+    list-style: none;
+    font-size: 15px;
+    margin: 20px 25px;
+    padding: 10px;
+    position: relative;
+}
+
+ul li.check::before
+{
+background-image: url("checked.png");
+}
+
+ul li span
+{
+    position: absolute;
+    top: 15%;
+    left:80%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 22px;
+    text-align: center;
+
+}
+ul li span:hover
+{
+
+   width: 30px;
+   height: 25px;
+   background-color:#edeef0;
+
+}
+/*#task_btn
+{
+    width: 35px;
+    height: 40px;
+    margin-left: 40%;
+    border-radius: 50%;
+}*/
+@media screen and (max-width:1000px)
+{
+    .main-box
+    {
+        width:350px;
+        padding-bottom: 100px;
+    }
+    .add-task input
+    {
+        width: 90%;
+        font-size: 70%;
+    }
+
+
+}
+@media screen and (max-width:400px)
+{
+    .main-box
+    {
+        width:300px;
+        padding-bottom: 20%;
+
+
+    }
+    .add-task input
+    {
+        width: 90%;
+        font-size: 70%;
+    }
+
+
+}

@@ -1,0 +1,65 @@
+header
+{
+    font-size: 20px;
+}
+
+ content img
+{
+
+    width: 190%;
+    height: 100%;
+}
+content
+{
+    font-size: 45px;
+    font-family: 'Gill Sans';
+}
+
+@media screen and (max-width:900px)
+{
+    body
+    {
+        margin: 0px;
+        padding: 0px;
+    }
+    header
+    {
+        padding: 40px;
+        margin: 30px;
+        font-size: 15px;
+        
+    }
+    
+    content
+    {
+        font-size: 30px;
+
+    }
+    content img
+    {
+    width: 120%;
+    height: 120%;
+    }
+
+}
+
+@media screen and (max-width:750px)
+{
+    body
+    {
+        margin: 0px;
+        padding: 0px;
+    }
+  
+    content
+    {
+        font-size: 15px;
+        font-family: 'Gill Sans';
+    }
+    content img
+    {
+    width: 50%;
+    height: 100%;
+    }
+    
+}
